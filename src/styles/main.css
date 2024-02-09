@@ -15,7 +15,11 @@
 
 html, body{
     font-family:'Poppins', sans-serif;
-    @apply text-primary bg-passive h-full w-full;
+    @apply text-primary bg-passive;
+}
+
+html, body, #root{
+    height: 100%;
 }
 
 .layout-sidebar{

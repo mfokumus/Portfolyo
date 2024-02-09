@@ -9,7 +9,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="bg-white">
+    <div className="">
       <header>
         <h1>Mete Furkan</h1>
       </header>

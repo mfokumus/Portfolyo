@@ -5,7 +5,7 @@ import "../styles/main.css";
 
 const MasterLayout = () => {
   return (
-    <div className="flex">
+    <div className="flex h-full">
       <div className="layout-sidebar">
         <SideBar />
       </div>

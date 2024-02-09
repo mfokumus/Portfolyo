@@ -4,9 +4,13 @@ import Footer from "./Footer";
 
 const SideBar = () => {
   return (
-    <div>
-      <Navbar />
-      <Footer />
+    <div className="flex flex-col h-full bg-white">
+      <div className="flex-3">
+        <Navbar />
+      </div>
+      <div className="flex-1">
+        <Footer />
+      </div>
     </div>
   );
 };
