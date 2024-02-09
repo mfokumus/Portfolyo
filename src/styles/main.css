@@ -8,5 +8,6 @@
 }
 
 .layout-main{
+    @apply flex-3
 
 }
