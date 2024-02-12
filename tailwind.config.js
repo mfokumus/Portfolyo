@@ -10,9 +10,9 @@ export default {
         secondary: "#86E896",
       },
       flex: {
-        '2': '2',
-        '3': '3',
-      }
+        2: "2",
+        3: "3",
+      },
     },
   },
   plugins: [],

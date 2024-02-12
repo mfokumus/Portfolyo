@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
 *{
@@ -29,5 +30,31 @@ html, body, #root{
 
 .layout-main{
     @apply flex-3
+}
 
+.header{
+    position: relative;
+}
+
+.header::after{
+    left: -20px;
+    bottom: 0;
+    border-left: 5px solid;
+    border-bottom: 5px solid;
+}
+
+.header::before{
+    right: -20px;
+    top: 0;
+    border-right: 5px solid;
+    border-top: 5px solid;
+}
+
+.header::after, 
+.header::before{
+    content:"";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: #ff3200;
 }

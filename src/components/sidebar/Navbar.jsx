@@ -10,39 +10,39 @@ import {
 const Navbar = () => {
   return (
     <div className="">
-      <header>
-        <h1>Mete Furkan</h1>
+      <header className="header mb-[70px]">
+        <h1 className=" font-bold text-primary text-[30px]">Mete Furkan</h1>
       </header>
       <nav>
-        <ul>
-          <li>
-            <Link>
-              <IoHome />
-              <span>Anasayfa</span>
+        <ul className="flex flex-col gap-[30px]">
+          <li className="border-b-[1px] pb-3">
+            <Link className="flex items-center gap-[7px] text-primary px-5">
+              <IoHome size={24} />
+              <span className="text-[20px] font-medium">Anasayfa</span>
             </Link>
           </li>
-          <li>
-            <Link>
-              <IoPerson />
-              <span>Hakkımızda</span>
+          <li className="border-b-[1px] pb-3">
+            <Link className="flex items-center gap-[7px] text-primary px-5">
+              <IoPerson size={24} />
+              <span className="text-[20px] font-medium">Hakkımızda</span>
             </Link>
           </li>
-          <li>
-            <Link>
-              <IoList />
-              <span>Hizmetlerim</span>
+          <li className="border-b-[1px] pb-3">
+            <Link className="flex items-center gap-[7px] text-primary px-5">
+              <IoList size={24} />
+              <span className="text-[20px] font-medium">Hizmetlerim</span>
             </Link>
           </li>
-          <li>
-            <Link>
-              <IoBriefcase />
-              <span>Portfolyom</span>
+          <li className="border-b-[1px] pb-3">
+            <Link className="flex items-center gap-[7px] text-primary px-5">
+              <IoBriefcase size={24} />
+              <span className="text-[20px] font-medium">Portfolyom</span>
             </Link>
           </li>
-          <li>
-            <Link>
-              <IoReceipt />
-              <span>İletişim</span>
+          <li className="border-b-[1px] pb-3">
+            <Link className="flex items-center gap-[7px] text-primary px-5">
+              <IoReceipt size={24} />
+              <span className="text-[20px] font-medium">İletişim</span>
             </Link>
           </li>
         </ul>
