@@ -1,11 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  IoHome,
-  IoPerson,
-  IoList,
-  IoBriefcase,
-  IoReceipt,
-} from "react-icons/io5";
+import { navbarList } from "../../utils/const/NavbarList";
 
 const Navbar = () => {
   return (
@@ -15,36 +9,14 @@ const Navbar = () => {
       </header>
       <nav>
         <ul className="flex flex-col gap-[30px]">
-          <li className="border-b-[1px] pb-3">
-            <Link className="flex items-center gap-[7px] text-primary px-5">
-              <IoHome size={24} />
-              <span className="text-[20px] font-medium">Anasayfa</span>
-            </Link>
-          </li>
-          <li className="border-b-[1px] pb-3">
-            <Link className="flex items-center gap-[7px] text-primary px-5">
-              <IoPerson size={24} />
-              <span className="text-[20px] font-medium">Hakkımızda</span>
-            </Link>
-          </li>
-          <li className="border-b-[1px] pb-3">
-            <Link className="flex items-center gap-[7px] text-primary px-5">
-              <IoList size={24} />
-              <span className="text-[20px] font-medium">Hizmetlerim</span>
-            </Link>
-          </li>
-          <li className="border-b-[1px] pb-3">
-            <Link className="flex items-center gap-[7px] text-primary px-5">
-              <IoBriefcase size={24} />
-              <span className="text-[20px] font-medium">Portfolyom</span>
-            </Link>
-          </li>
-          <li className="border-b-[1px] pb-3">
-            <Link className="flex items-center gap-[7px] text-primary px-5">
-              <IoReceipt size={24} />
-              <span className="text-[20px] font-medium">İletişim</span>
-            </Link>
-          </li>
+          {navbarList.map((item, index) => (
+            <li key={index} className="border-b-[1px] pb-3">
+              <Link className="flex items-center gap-[7px] text-primary px-5">
+                {item.icon}
+                <span className="text-[20px] font-medium">{item.title}</span>
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
