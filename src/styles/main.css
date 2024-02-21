@@ -4,8 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -57,4 +55,8 @@ html, body, #root{
     width: 20px;
     height: 20px;
     border-color: #ff3200;
+}
+
+.active{
+    @apply text-main
 }

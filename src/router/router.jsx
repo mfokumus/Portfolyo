@@ -13,8 +13,13 @@ export const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <AboutPage/>
+        element: <AboutPage />,
       },
     ],
+  },
+
+  {
+    path: "*",
+    element: <div>404 Sayfasına Hoşgeldiniz</div>,
   },
 ]);

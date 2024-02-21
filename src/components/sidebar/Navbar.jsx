@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { navbarList } from "../../utils/const/NavbarList";
 
 const Navbar = () => {
@@ -8,13 +8,13 @@ const Navbar = () => {
         <h1 className=" font-bold text-primary text-[30px]">Mete Furkan</h1>
       </header>
       <nav>
-        <ul className="flex flex-col gap-[30px]">
+        <ul className="flex flex-col gap-[30px] mb-[20px]">
           {navbarList.map((item, index) => (
             <li key={index} className="border-b-[1px] pb-3">
-              <Link className="flex items-center gap-[7px] text-primary px-5">
+              <NavLink to={item.url} className="flex items-center gap-[7px] text-primary px-5">
                 {item.icon}
                 <span className="text-[20px] font-medium">{item.title}</span>
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
